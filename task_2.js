@@ -35,8 +35,8 @@ eventEmitter.emit("timers", "СЕЙЧАС: " + new Date());
                 let stopHours = Math.floor((timerWork/(1000*60*60)) % 24);
                 let stopDays = Math.floor(timerWork/(1000*60*60*24));
 
-                eventEmitter.emit("timers", 'ТАЙМЕР-' + (idx + 1 ) + ' СРАБОТАЕТ ЧЕРЕЗ: D_'
-                    + stopDays + ' H_' + stopHours + ' M_' + stopMinutes + ' S_' + stopSeconds);
+                eventEmitter.emit("timers", 'ТАЙМЕР-' + (idx + 1 ) + ' СРАБОТАЕТ ЧЕРЕЗ: D: '
+                    + stopDays + ' H: ' + stopHours + ' M: ' + stopMinutes + ' S: ' + stopSeconds);
             }
         }, 1000);
 
